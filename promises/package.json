@@ -1,0 +1,17 @@
+{
+  "name": "learning_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^12.1.0"
+  },
+  "devDependencies": {
+    "prettier": "1.17.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Anderson",
+  "license": "ISC"
+}
