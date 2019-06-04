@@ -17,3 +17,19 @@ we as the devolopers determine what resoved and rejected are.
 
 StartGame().then() will the evaluate to the resolved value you determined in the promises
 StartGame().catch() will evaluate to the value you rejected determined in the promises
+
+Schema is what is used to define how a record is stored.
+example is
+const UserSchema = new Schema ({
+name: String
+
+})
+
+each user will have a record with a name attribute and what is there ie "paul" will be a string
+
+When you create a database its called a model.
+ie
+const User = mongoose.model('user',UserSchema).
+this means that each record is going to expect to be formatted by the UserSchema
+
+the User is referring to the whole database not just one user.
