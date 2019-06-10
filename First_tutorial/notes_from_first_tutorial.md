@@ -1,3 +1,6 @@
+This project is based on the course on udemy called Complete Developers Guide to MongoDB
+
+Day 1
 Promises
 They are used to handle anything asynchronous
 
@@ -18,6 +21,8 @@ we as the devolopers determine what resoved and rejected are.
 StartGame().then() will the evaluate to the resolved value you determined in the promises
 StartGame().catch() will evaluate to the value you rejected determined in the promises
 
+Day 2
+
 Schema is what is used to define how a record is stored.
 example is
 const UserSchema = new Schema ({
@@ -33,3 +38,9 @@ const User = mongoose.model('user',UserSchema).
 this means that each record is going to expect to be formatted by the UserSchema
 
 the User is referring to the whole database not just one user.
+
+Day 3
+const joe = new User
+User is the User model or User Class
+
+Joe wiould be the instance of a User class
