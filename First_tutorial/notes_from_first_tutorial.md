@@ -44,3 +44,8 @@ const joe = new User
 User is the User model or User Class
 
 Joe wiould be the instance of a User class
+
+Day 4
+The reason why we add the before function before the mongoose.connection is because we want to run our error check after we connect to the mongoose database
+
+The difference between beforeEach and before is that before() will run exactly one time for all of your test suite
