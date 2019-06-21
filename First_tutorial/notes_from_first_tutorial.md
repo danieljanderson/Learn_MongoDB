@@ -49,3 +49,8 @@ Day 4
 The reason why we add the before function before the mongoose.connection is because we want to run our error check after we connect to the mongoose database
 
 The difference between beforeEach and before is that before() will run exactly one time for all of your test suite
+
+Day 5
+Class.find(criteria) find all the users that match the given criteria. Returns an array
+
+Class.findOne(criteria) Find the first user that matches the criteria. Returns a single record.
