@@ -54,3 +54,6 @@ Day 5
 Class.find(criteria) find all the users that match the given criteria. Returns an array
 
 Class.findOne(criteria) Find the first user that matches the criteria. Returns a single record.
+In mongodb and mongoose as soon as you make a new instance of your model it automatically creates a record id.
+
+the \_id property is actually an object that contains the string not a raw string. However when compairing two \_id property strings with an === it will fail. The strings will be the same but the objectID(which is an object) that wraps them will be different.
