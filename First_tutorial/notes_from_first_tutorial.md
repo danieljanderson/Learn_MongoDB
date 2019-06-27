@@ -57,3 +57,25 @@ Class.findOne(criteria) Find the first user that matches the criteria. Returns a
 In mongodb and mongoose as soon as you make a new instance of your model it automatically creates a record id.
 
 the \_id property is actually an object that contains the string not a raw string. However when compairing two \_id property strings with an === it will fail. The strings will be the same but the objectID(which is an object) that wraps them will be different.
+
+joe
+.remove()
+.then(() => User.findOne({ name: 'Joe' }))
+.then(user => {
+assert(user === null);
+done();
+});
+
+explanation of the code up there
+joe.remove() returns a promise
+we call .then(() => User.findOne({ name: 'Joe' })) because we want to see if joe.remove really was removed
+after that we want to call
+.then(user => {
+assert(user === null);
+done();
+we assert that user===null because there is not going to be another user in our database.
+
+Now the variable user. user is the result of the evaluation of User.findOne({name:'Joe'}) because user is going into a function you could call it what ever you wanted.
+
+use instance.remove when you want to remove one instance of the record
+you use class.remove when you want to remove a bunch of records with some given criteria
