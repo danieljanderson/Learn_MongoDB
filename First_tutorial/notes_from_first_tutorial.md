@@ -79,3 +79,27 @@ Now the variable user. user is the result of the evaluation of User.findOne({nam
 
 use instance.remove when you want to remove one instance of the record
 you use class.remove when you want to remove a bunch of records with some given criteria
+
+Subdocuments is the term used for linking two schemes together This example uses Users and Posts. Users will have a model but a Post will not. The reason being is that the User can make many posts.
+
+The difference between this code .then(user => {
+user.posts.push({ title: 'New Post' });
+return user.save();
+})
+
+      and this code
+      .then(() => User.findOne({ name: 'Joe' }))
+
+this code needs a return value because it uses {}
+then(user => {
+user.posts.push({ title: 'New Post' });
+return user.save();
+})
+
+Also if you are saving subdocuments you have to save the whole user not just the subdocuments
+
+virtual types is any sort of property that is stored on the model that doesnt get stored in the mongoDB database the server.
+
+virtual types use getters and setters of ES6
+
+In mocha if you put a x in front of an it block it will not run.
