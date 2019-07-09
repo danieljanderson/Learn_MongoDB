@@ -108,3 +108,9 @@ In mocha if you put a x in front of an it block it will not run.
 
 const BlogPost = mongoose.model('blogPost',BlogPostSchema)
 blogPost is the actual name of the collection (or database)
+
+Promise.all([joe.save(), blogPost.save(), comment.save()]).then(() => {
+done()
+you have to have a promise all because you dont know which save will be the last one to run. You want to make sure that the done function runs only after all of the collections have been saved.
+
+it.only will only run that it block test
