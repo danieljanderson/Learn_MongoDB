@@ -1,5 +1,7 @@
 This project is based on the course on udemy called Complete Developers Guide to MongoDB
 
+Any questions about documentation and syntax look up mongoose.
+
 Day 1
 Promises
 They are used to handle anything asynchronous
@@ -103,3 +105,6 @@ virtual types is any sort of property that is stored on the model that doesnt ge
 virtual types use getters and setters of ES6
 
 In mocha if you put a x in front of an it block it will not run.
+
+const BlogPost = mongoose.model('blogPost',BlogPostSchema)
+blogPost is the actual name of the collection (or database)
