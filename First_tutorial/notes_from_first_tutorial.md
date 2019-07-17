@@ -114,3 +114,10 @@ done()
 you have to have a promise all because you dont know which save will be the last one to run. You want to make sure that the done function runs only after all of the collections have been saved.
 
 it.only will only run that it block test
+
+this is an example of how to update a single collection
+Artist.update({ \_id }, artistProps);
+
+this is translates to
+
+I want to look at my whole collection of data . i want to update ({a record that matches this property}, with this object)
