@@ -121,3 +121,7 @@ Artist.update({ \_id }, artistProps);
 this is translates to
 
 I want to look at my whole collection of data . i want to update ({a record that matches this property}, with this object)
+
+Project structure
+
+A Router file listens for url and the method of the request and the controller file tells what to do with the request.
