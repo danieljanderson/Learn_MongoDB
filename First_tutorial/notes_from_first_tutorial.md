@@ -2,7 +2,6 @@ This project is based on the course on udemy called Complete Developers Guide to
 
 Any questions about documentation and syntax look up mongoose.
 
-Day 1
 Promises
 They are used to handle anything asynchronous
 
@@ -22,8 +21,6 @@ we as the devolopers determine what resoved and rejected are.
 
 StartGame().then() will the evaluate to the resolved value you determined in the promises
 StartGame().catch() will evaluate to the value you rejected determined in the promises
-
-Day 2
 
 Schema is what is used to define how a record is stored.
 example is
@@ -125,3 +122,5 @@ I want to look at my whole collection of data . i want to update ({a record that
 Project structure
 
 A Router file listens for url and the method of the request and the controller file tells what to do with the request.
+
+supertest allows you to send fake https requests to test your app.
